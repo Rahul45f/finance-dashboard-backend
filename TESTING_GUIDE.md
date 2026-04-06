@@ -21,9 +21,9 @@ http://localhost:3000/
 
 ## Best Way to Test
 
-The easiest way to test this project is by using **Postman**. Postman lets you send API requests using buttons instead of writing code.[cite:42][cite:43]
+The easiest way to test this project is by using **Postman**. Postman lets you send API requests using buttons instead of writing code.
 
-If Postman is not installed, install it first.
+If Postman is not installed, [Install Postman](https://www.postman.com/downloads/).
 
 ## Test 1: Check if server is running
 
