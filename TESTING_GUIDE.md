@@ -45,16 +45,16 @@ Expected result:
 ## Test 2: Login as admin
 
 1. Open a new request.
-2. Change method from **GET** to **POST**.[cite:43][cite:46]
+2. Change method from **GET** to **POST**.
 3. In the URL box, enter:
 
 ```text
 http://localhost:3000/api/auth/login
 ```
 
-4. Click the **Body** tab.[cite:49]
-5. Select **raw**.[cite:49]
-6. In the dropdown on the right side, choose **JSON**.[cite:49]
+4. Click the **Body** tab.
+5. Select **raw**.
+6. In the dropdown on the right side, choose **JSON**.
 7. Paste this:
 
 ```json
@@ -69,11 +69,11 @@ http://localhost:3000/api/auth/login
 Expected result:
 - You should get a JSON response.
 - The response should contain a **token**.
-- Copy that token because it will be used in later tests.[cite:29][cite:39]
+- Copy that token because it will be used in later tests.
 
 ## Test 3: Use token for protected routes
 
-Protected routes need a Bearer token in Postman.[cite:29][cite:39]
+Protected routes need a Bearer token in Postman.
 
 1. Open a new request.
 2. Enter a protected URL such as:
@@ -83,7 +83,7 @@ http://localhost:3000/api/users
 ```
 
 3. Click the **Authorization** tab.
-4. In **Type**, choose **Bearer Token**.[cite:39]
+4. In **Type**, choose **Bearer Token**.
 5. Paste the admin token into the token box.
 6. Click **Send**.
 
@@ -127,7 +127,7 @@ Expected result:
 ## Test 6: Create a new record
 
 1. Open a new request.
-2. Set method to **POST**.[cite:46]
+2. Set method to **POST**.
 3. Enter:
 
 ```text
@@ -159,7 +159,7 @@ Expected result:
 
 ## Test 7: Check route without token
 
-This checks whether unauthorized users are blocked properly.[cite:35][cite:41]
+This checks whether unauthorized users are blocked properly.
 
 1. Open a new request.
 2. Set method to **GET**.
@@ -173,7 +173,7 @@ http://localhost:3000/api/users
 5. Click **Send**.
 
 Expected result:
-- You should get **401 Unauthorized**.[cite:35][cite:41]
+- You should get **401 Unauthorized**.
 
 ## Test 8: Login as viewer
 
@@ -234,7 +234,7 @@ http://localhost:3000/api/users
 5. Click **Send**.
 
 Expected result:
-- You should get **403 Forbidden** because the viewer role does not have admin permission.[cite:35][cite:41]
+- You should get **403 Forbidden** because the viewer role does not have admin permission.
 
 ## Test 10: Check validation
 
@@ -262,16 +262,16 @@ http://localhost:3000/api/records
 7. Click **Send**.
 
 Expected result:
-- You should get **400 Bad Request** because the amount is invalid.[cite:35][cite:41]
+- You should get **400 Bad Request** because the amount is invalid.
 
 ## Meaning of status codes
 
 - **200** = Request successful.
-- **201** = Resource created successfully.[cite:33]
-- **400** = Invalid request data.[cite:35]
-- **401** = No token or invalid token.[cite:35][cite:41]
-- **403** = Logged in, but not allowed to access that route.[cite:35][cite:41]
-
+- **201** = Resource created successfully.
+- **400** = Invalid request data.
+- **401** = No token or invalid token.
+- **403** = Logged in, but not allowed to access that route.
+  
 ## What to include in submission proof
 
 Take screenshots of these:
